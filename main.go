@@ -5,6 +5,7 @@ import (
 
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
+	"github.com/ndidplatform/api/user"
 )
 
 func main() {
@@ -14,6 +15,7 @@ func main() {
 	e.Use(middleware.Recover())
 
 	e.GET("/", hello)
+	e.GET("/v1/users", user.GetUser)
 
 	e.Logger.Fatal(e.Start(":2018"))
 }
