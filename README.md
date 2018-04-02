@@ -12,3 +12,6 @@
 1. `cd $GOPATH/src/github.com/ndidplatform/api` and then `go get ./...`
 1. `go run main.go`
 1. open browser `http://localhost:2018/` you will see `What's up!!! I'm NDID platform` done!
+
+## Testing
+1. `go test ./...`
